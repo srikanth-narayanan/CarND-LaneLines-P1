@@ -11,7 +11,7 @@
 
 This project is an introduction to apply image processing techinques such as masking, canny edge detection and hough transform to detect lanes in an image and extend them to video.
 
-![alt text][image1]
+![alt text](image1 =500x)
 
 In an autonomous vehicle a front mounted camera is in a fixed postion looking generating a front view of the roads and object. Lanes are of different types, width and quality. Identifying lanes with high confidence is a must for an self driving car or a truck. Hence a roboust logic is required to ensure the intended path of travel is correctly identified.
 
@@ -19,9 +19,14 @@ In an autonomous vehicle a front mounted camera is in a fixed postion looking ge
 
 The pipeline development consits of the following steps.
 
-. Understand the given image or a video file.
-. Gray Scale the given image.
-. Applying Gaussian filter to reduce noise.
+- Understand the given image or a video file.
+- Gray Scale the given image.
+- Applying Gaussian filter to reduce noise.
+- Use Canny Edge detection to identify the edges.
+- Identify the region of intrest and mask other regions
+- Use Hough transform to idetify the lanes
+- Perform average function to determine the co-ordinates of the lanes
+- Extrapolate the co-orindates to draw the lane
 
 
 
