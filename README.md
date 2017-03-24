@@ -1,9 +1,5 @@
 [//]: # (Image References)
 
-[image1]: ./test_images_output/solidYellowCurveContinuous_Detected.jpg
-
-[//]: # (Image References)
-
 [image2]: ./examples/grayscale.jpg "Grayscale"
 
 
@@ -11,7 +7,7 @@
 
 This project is an introduction to apply image processing techinques such as masking, canny edge detection and hough transform to detect lanes in an image and extend them to video.
 
-![alt text](image1 =500x)
+![](./test_images_output/solidYellowCurveContinuous_Detected.jpg =480x270)
 
 In an autonomous vehicle a front mounted camera is in a fixed postion looking generating a front view of the roads and object. Lanes are of different types, width and quality. Identifying lanes with high confidence is a must for an self driving car or a truck. Hence a roboust logic is required to ensure the intended path of travel is correctly identified.
 
