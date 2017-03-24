@@ -1,10 +1,9 @@
-#**Finding Lane Lines on the Road** 
+# Finding Lane Lines on the Road 
 
-##Writeup Template
+This project is an introduction to apply image processing techinques such as masking, canny edge detection and hough transform to detect lanes in an image and extend them to video.
 
-###You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
----
+![Sample Image of the detected Lane]
+(https://github.com/srikanth-narayanan/Udacity-Self-Driving-Car/blob/master/Term-1/CarND-LaneLines-P1/test_images_output/solidYellowCurveContinuous_Detected.jpg)
 
 **Finding Lane Lines on the Road**
 
