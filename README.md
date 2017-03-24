@@ -1,9 +1,18 @@
+[//]: # (Image References)
+
+[image1]: ./test_images_output/solidYellowCurveContinuous_Detected.jpg
+
+[//]: # (Image References)
+
+[image2]: ./examples/grayscale.jpg "Grayscale"
+
+
 # Finding Lane Lines on the Road 
 
 This project is an introduction to apply image processing techinques such as masking, canny edge detection and hough transform to detect lanes in an image and extend them to video.
 
-![Sample Image of the detected Lane]
-(https://github.com/srikanth-narayanan/Udacity-Self-Driving-Car/blob/master/Term-1/CarND-LaneLines-P1/test_images_output/solidYellowCurveContinuous_Detected.jpg)
+![alt text][image1]
+
 
 **Finding Lane Lines on the Road**
 
@@ -12,9 +21,7 @@ The goals / steps of this project are the following:
 * Reflect on your work in a written report
 
 
-[//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
 
 ---
 
@@ -28,7 +35,7 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![alt text][image1]
+![alt text][image2]
 
 
 ###2. Identify potential shortcomings with your current pipeline
