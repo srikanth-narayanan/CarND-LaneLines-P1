@@ -13,29 +13,16 @@ This project is an introduction to apply image processing techinques such as mas
 
 ![alt text][image1]
 
+In an autonomous vehicle a front mounted camera is in a fixed postion looking generating a front view of the roads and object. Lanes are of different types, width and quality. Identifying lanes with high confidence is a must for an self driving car or a truck. Hence a roboust logic is required to ensure the intended path of travel is correctly identified.
 
-**Finding Lane Lines on the Road**
+### Pipeline Development
 
-The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
+The pipeline development consits of the following steps.
 
+. Understand the given image or a video file.
+. Gray Scale the given image.
+. Applying Gaussian filter to reduce noise.
 
-
-
----
-
-### Reflection
-
-###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
-
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image2]
 
 
 ###2. Identify potential shortcomings with your current pipeline
