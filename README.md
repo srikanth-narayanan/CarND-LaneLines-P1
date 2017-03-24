@@ -63,16 +63,20 @@ By using approximate Y co-ordinates the vertices of left and right lane are dete
 
 While processing video, in order compensate for the shifting lanes and curvature could be compensated by averaging the lanes with previous vertices.
 
-###2. Identify potential shortcomings with your current pipeline
+The output video are generated in to the test_video_output
+
+### Potential shortcomings with current pipeline
+
+The following are the shortcomings with the current pipeline
+
+	1. This method will only detect straight lines. Sharp curvatures, round abouts, exit ramps situations will be difficult to detect.
+	2. The images could be masked for yellow or white lines for better edge detection
+	3. This method can only detect straight roads. This pipeline will not work for steep hill road with lower horizon.
 
 
-One potential shortcoming would be what would happen when ... 
+### Possible improvements to the pipeline
 
-Another shortcoming could be ...
+The following are the possible improvements to the pipeline.
 
-
-###3. Suggest possible improvements to your pipeline
-
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+	1. Apply better transform and polyfit line or euler curves to detected curved roads.
+	2. Horizon detection for hill road conidtions can improve lane detection.
