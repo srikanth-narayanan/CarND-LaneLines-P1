@@ -1,4 +1,4 @@
-# Finding Lane Lines on the Road 
+# Finding Lane on the Road 
 
 This project is an introduction to apply image processing techinques such as masking, Canny edge detection and Hough transform to detect lanes in an image and extend them to video.
 
