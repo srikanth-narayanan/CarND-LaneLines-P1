@@ -19,7 +19,7 @@ The pipeline development consists of the following steps.
 
 The images recorded by the camera are of dimensions 960 x 540. The images are imported as an array of RGB colourspace. The images are converted to grayscale images. This helps in better idenfitication of lanes, since the Canny edge detection works by identifying the gradient change in the pixels
 
-![](./test_images_output/solidWhiteCurveGrayScale_Rescaled.png#center)
+                     ![](./test_images_output/solidWhiteCurveGrayScale_Rescaled.png)
 
 
 In order for canny edge detect to identify the changes in gradient the edges of the lanes have to be smooth. This can be achieved by applying Gaussian filter. The kernel setting can be tuned and I found the value of 15 to be optimal.
