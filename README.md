@@ -59,7 +59,7 @@ By applying different weights for different lengths of the line an average slope
 
 By using approximate y co-ordinates the vertices of left and right lane are determined. These lines are draw over the original image as detected in lanes.
 
-![](./test_images_output/solidYellowCurveContinuous_Detected_Rescaled.png)
+![](./test_images_output/solidYellowCurve2Continuous_Detected_Rescaled.png)
 
 While processing the video, compensation of the lane moment oscillation and small curvatures are handled by averaging the lanes with previous vertices.
 
