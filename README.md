@@ -19,23 +19,23 @@ The pipeline development consists of the following steps.
 
 The images recorded by the camera are of dimensions 960 x 540. The images are imported as an array of RGB colourspace. The images are converted to grayscale images. This helps in better idenfitication of lanes, since the Canny edge detection works by identifying the gradient change in the pixels
 
-                     ![](./test_images_output/solidWhiteCurveGrayScale_Rescaled.png)
+![](./test_images_output/solidWhiteCurveGrayScale_Rescaled.png)
 
 
 In order for canny edge detect to identify the changes in gradient the edges of the lanes have to be smooth. This can be achieved by applying Gaussian filter. The kernel setting can be tuned and I found the value of 15 to be optimal.
 
-.center[![](./test_images_output/solidWhiteRightGau_Smooth_Rescaled.png)]
+![](./test_images_output/solidWhiteRightGau_Smooth_Rescaled.png)
 
 
 Canny Edge detection helps in identifying the image edges defined and tuned by the threshold parameters. 
 One can play around with threshold parameters. General advice is to use a ratio of 1:3 for the low to high threhold. I found the values of 50 and 150 seems to work very well for this image and video usecase.
 
-.center[![](./test_images_output/solidYellowCurve2Canny_Rescaled.png)]
+![](./test_images_output/solidYellowCurve2Canny_Rescaled.png)
 
 
 The canny edge detected image contains other edges that had to be removed. The region of interest could be applied over the image. The region of interest could be a polygon that cover just right area to capture the potential lane areas.
 
-.center[![](./test_images_output/solidWhiteCurveMasked_Rescaled.png)]
+![](./test_images_output/solidWhiteCurveMasked_Rescaled.png)
 
 
 Using Hough transform on the edge detected images, all the potetial vertices of the lines can be calculated. In order to get better detection, tunning of parameters is essential. The following parameters are the final set that produced a reasonable output both for the images and videos.
@@ -59,7 +59,7 @@ By applying different weights for different lengths of the line an average slope
 
 By using approximate y co-ordinates the vertices of left and right lane are determined. These lines are draw over the original image as detected in lanes.
 
-.center[![](./test_images_output/solidYellowCurveContinuous_Detected_Rescaled.png)]
+![](./test_images_output/solidYellowCurveContinuous_Detected_Rescaled.png)
 
 While processing the video, compensation of the lane moment oscillation and small curvatures are handled by averaging the lanes with previous vertices.
 
